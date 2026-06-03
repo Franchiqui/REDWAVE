@@ -110,8 +110,6 @@ function useAudioAnalyser(audioRef: React.RefObject<HTMLAudioElement | null>) {
   return { analyser: analyserRef.current, init, resume };
 }
 
-//bbb
-
 function AudioVisualizer({ analyser, isPlaying }: { analyser: AnalyserNode | null; isPlaying: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
